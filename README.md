@@ -19,6 +19,15 @@ const findings = checkDocuments(reqs, ['AIR_WAYBILL', 'COMMERCIAL_INVOICE']);
 
 ```sh
 npm install
-npm test
+npm test           # engine tests
 npm run typecheck
+npm run dev        # interactive UI demo at http://localhost:5173 (rebuilds on save)
+npm run build:ui   # writes a single self-contained dist/demo.html
 ```
+
+## UI demo
+
+`ui/app.ts` is a working mock-up of the settings screens, running on the real
+engine: company default list, entity document checks (inherited / entity rule
+/ excluded), the "Applies to" editor, a shipment preview, and a live document
+check result. State is in memory; "Reset demo" restores the defaults.

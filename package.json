@@ -9,11 +9,14 @@
     "node": ">=22.18"
   },
   "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "build:ui": "node scripts/build-ui.mjs",
     "test": "node --test \"test/**/*.test.ts\"",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
     "@types/node": "^22.20.5",
+    "esbuild": "^0.25.12",
     "typescript": "^5.9.3"
   }
 }
