@@ -1,0 +1,19 @@
+{
+  "name": "doc-rules-engine",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Conditional document requirement rules (by transport mode, direction, load type) for customs declarations",
+  "main": "src/index.ts",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "test": "node --test \"test/**/*.test.ts\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "typescript": "^5.9.3"
+  }
+}
